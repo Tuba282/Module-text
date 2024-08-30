@@ -1,0 +1,111 @@
+* {
+  font-family: "Space Grotesk", sans-serif !important;
+}
+
+.first-logo {
+  transition: transform 2s ease;
+}
+.first-logo:hover {
+  transform: rotate(360deg);
+}
+.hero-btn-1 {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+.hero-btn-1:hover {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+
+.hero-btn-2 {
+  background-color: black !important;
+  color: white !important;
+  border: 1px solid black !important;
+}
+.hero-btn-2:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black !important;
+}
+
+.ser-card {
+  border: 1px solid black;
+  border-radius: 50px !important;
+  box-shadow: 0px 10px 1px black;
+}
+.Q-A {
+  border-radius: 50px;
+  border: 1px solid black;
+  border-radius: 50px !important;
+  box-shadow: 0px 10px 1px black;
+}
+
+.plus {
+  border: 1px solid black;
+}
+.ans,
+.minus {
+  display: none;
+}
+.Q-A .ques:hover + .ans,
+.Q-A .ques:hover .minus {
+  display: block !important;
+}
+.Q-A .ques:hover .plus {
+  display: none !important;
+}
+.contact-img {
+  margin-left: 35% !important;
+}
+
+.footer {
+  border-radius: 50px 50px 0px 0px !important;
+  background-color: black !important;
+}
+.footer-icon:hover {
+  background-color: #b9ff66 !important;
+}
+@media (max-width: 991px) {
+  .hero {
+    /* hero div hai jombotron*/
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .hero-sub {
+    width: 90% !important;
+    height: 50% !important;
+    text-align: center !important;
+  }
+  .after-hero {
+    flex-wrap: wrap !important;
+    flex-direction: column !important;
+  }
+  .contact-img {
+    margin-left: 0% !important;
+  }
+  .footer-ul{
+    display: none !important;
+  }
+}
+@media (max-width: 767px) and (min-width: 300px) {
+  .ans,
+  .plus {
+  }
+}
+@media (max-width: 500px) and (min-width: 300px) {
+  .minus,
+  .plus {
+    display: none !important;
+  }
+  .ques h1,
+  .ques span {
+    font-size: 20px;
+  }.footer-second-div{
+    flex-direction: column !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+}
